@@ -25,6 +25,8 @@ SECRET_KEY = '(y#ao#4qy@qdrvzz6o55=meh47c-*@j0l9q%x-dzylx&gndpi='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+IMPORT_EXPORT_USE_TRANSACTIONS = True
+
 ALLOWED_HOSTS = []
 
 
@@ -37,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'collection',
+    'import_export',
 ]
 
 MIDDLEWARE = [

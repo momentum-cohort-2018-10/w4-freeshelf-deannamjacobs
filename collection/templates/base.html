@@ -1,2 +1,24 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+crossorigin="anonymous">
+{% load staticfiles %}
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        {% block title %}
+        Freeshelf
+        {% endblock title %}
+        <!-- want to override page titles -->
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% block header %}{% endblock header %}
+</head>
+
+<body>
+    {% block content %}{% endblock content %}
+    {% block footer %}{% endblock footer %}
+    <!-- as well as override content bits -->
+</body>
+
+</html>
