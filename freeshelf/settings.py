@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'collection',
     'import_export',
+    'django_extensions',
+    'books',
 ]
 
 MIDDLEWARE = [

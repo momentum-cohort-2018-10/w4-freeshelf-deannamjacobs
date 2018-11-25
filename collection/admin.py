@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from collection.models import Books
+from collection.models import Book
 
-class BooksAdmin(admin.ModelAdmin):
-    model = Books
+class BookAdmin(admin.ModelAdmin):
+    model = Book
     list_display = ('title', 'author', 'description', 'date', 'URL')
     prepopulated_fields = {'slug': ('title',)}
 
-admin.site.register(Books, BooksAdmin)
+admin.site.register(Book, BookAdmin)
