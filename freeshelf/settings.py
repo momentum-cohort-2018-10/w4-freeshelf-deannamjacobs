@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'collection',
     'import_export',
     'django_extensions',
-    'books',
+    
 ]
 
 MIDDLEWARE = [
